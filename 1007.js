@@ -1,0 +1,11 @@
+var input = require('fs').readFileSync('entrada.txt', 'utf8');
+var lines = input.split('\n');
+let a = lines[0];
+let b = lines[1];
+let c = lines[2];
+let d = lines[3];
+let diferença = parseInt(lines[0]);
+let mult1= a*b;
+let mult2= c*d;
+let diferença2= mult1-mult2;
+console.log ('DIFERENCA = '+diferença2);

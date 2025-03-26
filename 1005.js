@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('entrada.txt', 'utf8');
+var lines = input.split('\n');
+let a = lines[0];
+let b = lines[1];
+let media = parseFloat(lines[0]);
+const peso1=3.5;
+const peso2=7.5;
+let somadospesos= peso1+peso2;
+let resultado1= a*peso1;
+let resultado2= b*peso2;
+let soma= resultado1+resultado2;
+let divisao= soma/somadospesos;
+console.log ('MEDIA = '+divisao.toFixed(5));
