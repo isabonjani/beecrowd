@@ -1,0 +1,12 @@
+var input = require('fs').readFileSync('entrada.txt', 'utf8');
+var lines = input.split('\n');
+let codigo1 = lines[0].split(" ");
+let codigo2 = lines[1].split(" ");
+let quantidade1 =  parseInt(codigo1[1]);
+let quantidade2 =  parseInt(codigo2[1]);
+let valor1 =  parseFloat(codigo1[2]);
+let valor2  =  parseFloat(codigo2[2]);
+let quantidadeDeProdutos1 = quantidade1*valor1;
+let quantidadeDeProdutos2 = quantidade2*valor2;
+let valorFinal = quantidadeDeProdutos1+quantidadeDeProdutos2;
+console.log ('VALOR A PAGAR: R$ '+valorFinal.toFixed(2));
