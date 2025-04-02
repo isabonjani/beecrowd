@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('entrada.txt', 'utf8');
+var lines = input.split('\n');
+let p1 = lines[0].split(" ");
+let p2 = lines[1].split(" ");
+let x1 =  parseFloat(p1[0]);
+let x2 =  parseFloat(p2[0]);
+let y1 =  parseFloat(p1[1]);
+let y2 =  parseFloat(p2[1]);
+let parte1=Math.pow((x2-x1),2);
+let parte2=(y2-y1)** 2;
+let soma=parte1+parte2;
+let resultadoFinal=Math.sqrt (soma);
+console.log (resultadoFinal.toFixed(4));
